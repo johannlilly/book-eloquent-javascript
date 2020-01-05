@@ -4,9 +4,9 @@ For example, the number 13 could be reached by first multiplying by 3 and then a
 
 Here is a recursive solution: */
 
-function findSolution(target) {
-  function find(current, history) {
-    if (current == target) {
+findSolution = target => {
+  find = (current, history) => {
+    if (current === target) {
       return history;
     } else if (current > target) {
       return null;
